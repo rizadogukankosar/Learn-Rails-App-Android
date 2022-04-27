@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="Turbo"
+        android:id="@+id/turboPageFragment"
+        android:icon="@drawable/turbo_logo_navigation"/>
+    <item android:title="Rails"
+        android:id="@+id/guidesPageFragment"
+        android:icon="@drawable/guides_logo_navigation"/>
+    <item android:title="Stimulus"
+        android:id="@+id/stimulusPageFragment"
+        android:icon="@drawable/stimulus_logo_navigation"/>
+</menu>

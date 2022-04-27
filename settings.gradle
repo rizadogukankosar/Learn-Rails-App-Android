@@ -1,0 +1,3 @@
+include ':turbo'
+include ':app'
+rootProject.name = "LearnRailsApp"

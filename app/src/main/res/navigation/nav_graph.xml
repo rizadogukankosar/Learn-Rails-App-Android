@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/turboPageFragment">
+
+    <fragment
+        android:id="@+id/turboPageFragment"
+        android:name="com.graifstudio.learnrailsapp.TurboPage.TurboPageFragment"
+        android:label="fragment_turbo_page"
+        tools:layout="@layout/fragment_turbo_page" />
+    <fragment
+        android:id="@+id/stimulusPageFragment"
+        android:name="com.graifstudio.learnrailsapp.StimulusPage.StimulusPageFragment"
+        android:label="fragment_stimulus_page"
+        tools:layout="@layout/fragment_stimulus_page" />
+    <fragment
+        android:id="@+id/guidesPageFragment"
+        android:name="com.graifstudio.learnrailsapp.GuidesPage.GuidesPageFragment"
+        android:label="fragment_guides_page"
+        tools:layout="@layout/fragment_guides_page" />
+</navigation>
