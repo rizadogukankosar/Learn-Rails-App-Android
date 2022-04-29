@@ -1,7 +1,9 @@
 package com.graifstudio.learnrailsapp.TurboPage
 
+import android.content.Context
 import android.webkit.WebView
 import android.widget.Toast
+import androidx.activity.OnBackPressedCallback
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import com.webproject.rubyonrailsandroidapp.features.web.WebBottomSheetFragment
@@ -43,9 +45,9 @@ class MainSessionNavHostFragment : TurboSessionNavHostFragment(){
 
     override fun onSessionCreated() {
         super.onSessionCreated()
+
         session.webView.settings.userAgentString = customUserAgent(session.webView)
         session.webView.initDayNightTheme()
-
         if (BuildConfig.DEBUG) {
             session.setDebugLoggingEnabled(true)
             WebView.setWebContentsDebuggingEnabled(true)
@@ -55,4 +57,5 @@ class MainSessionNavHostFragment : TurboSessionNavHostFragment(){
     private fun customUserAgent(webView: WebView): String {
         return "Turbo Native Android ${webView.settings.userAgentString}"
     }
+
 }

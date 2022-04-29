@@ -2,6 +2,7 @@ package com.graifstudio.learnrailsapp.GuidesPage
 
 import android.webkit.WebView
 import android.widget.Toast
+import androidx.activity.OnBackPressedCallback
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import com.webproject.rubyonrailsandroidapp.features.web.WebBottomSheetFragment
@@ -42,7 +43,6 @@ class MainSessionNavHostFragment : TurboSessionNavHostFragment(){
         super.onSessionCreated()
         session.webView.settings.userAgentString = customUserAgent(session.webView)
         session.webView.initDayNightTheme()
-
         if (BuildConfig.DEBUG) {
             session.setDebugLoggingEnabled(true)
             WebView.setWebContentsDebuggingEnabled(true)
