@@ -2,6 +2,7 @@ package com.graifstudio.learnrailsapp
 
 import android.os.Bundle
 import android.webkit.WebView
+import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import androidx.viewpager2.widget.ViewPager2
@@ -65,7 +66,17 @@ class MainActivity : AppCompatActivity() {
         viewPager.adapter = adapter
     }
 
-
+    override fun onBackPressed() {
+        val alertDialogBuilder = AlertDialog.Builder(this)
+        alertDialogBuilder.setTitle("Are you sure ?")
+        alertDialogBuilder.setMessage("Do you want to exit the application ?")
+        alertDialogBuilder.setNegativeButton("No",{ dialog, which ->
+        })
+        alertDialogBuilder.setPositiveButton("Yes",{ dialog, which ->
+            finishAffinity()
+        })
+        alertDialogBuilder.show()
+    }
 
 
 
