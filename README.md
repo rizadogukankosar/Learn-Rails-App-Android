@@ -1,7 +1,11 @@
 # Learn Rails App For Android
 
 Bu uygulama rails ve hotwired konularını öğretmek amacıyla, Turbo android kütüphanesi kullanılarak yapılmıştır.
+
 Bu kütüphane TURBO 7 veya TURBOLINKS 5 destekli websitelerini mobil uygulamaya dönüştürmemizi sağlayan bir kütüphanedir.
+
+https://github.com/hotwired/turbo-android
+
 Uygulama ViewPager ve BottomNavigationBar kullanarak bu 3 site arası akıcı bir gezinti sağlar.
 
 ![Guides Fragment](https://user-images.githubusercontent.com/56265588/166078600-09becf19-a52e-4a69-abe0-f82c4a3d3884.PNG)
